@@ -1,0 +1,22 @@
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Lotto Generator</title>
+  </head>
+
+  <body>
+    <h1>Hot Lots</h1>
+
+    <div class="position floatfix">
+
+      <div id="history"></div>
+
+
+    </div>
+
+    <button type="button" id="generate" class="clearfix">Generate</button>
+
+  </body>
+
+</html>
