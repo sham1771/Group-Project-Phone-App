@@ -1,40 +1,42 @@
+
+
 var button = document.getElementById("generate");
 
 button.addEventListener("click", function() {
 
-  //get random numbers
+    //get random numbers
 
-  var numbers = [];
+    var numbers = [];
 
-  while (numbers.length < 6) {
+    while (numbers.length < 6) {
 
-    var random = Math.floor(Math.random() * 49) + 1;
+        var random = Math.floor(Math.random() * 49) + 1;
 
-    if (numbers.indexOf(random) == -1) {
-      numbers.push(random);
+        if (numbers.indexOf(random) == -1) {
+            numbers.push(random);
+        }
     }
-  }
 
-  //sort numbers in array
+    //sort numbers in array
 
-  numbers.sort(function(a, b) {
-    return a - b;
-  });
+    numbers.sort(function(a, b) {
+        return a - b;
+    });
 
 
-  //add numbers to history
+    //add numbers to history
 
-  var history = [];
-  var historyDiv = document.getElementById("history");
-  var para = document.createElement("p");
-  history.push(numbers.join(", "));
+    var history = [];
+    var historyDiv = document.getElementById("history");
+    var para = document.createElement("p");
+    history.push(numbers.join(", "));
 
-  for (var k in history) {
+    for (var k in history) {
 
-    var node = document.createTextNode(history[k]);
-    para.appendChild(node);
-    historyDiv.appendChild(para);
+        var node = document.createTextNode(history[k]);
+        para.appendChild(node);
+        historyDiv.appendChild(para);
 
-  }
+    }
 
 });
