@@ -1,22 +1,25 @@
+<!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <title>Lotto Generator</title>
-  </head>
+    <link rel="stylesheet" href="Style.css">
+</head>
 
-  <body>
+<body>
+<div id="wrapper">
     <h1>Hot Lots</h1>
-
-    <div class="position floatfix">
-
-      <div id="history"></div>
-
-
-    </div>
-
+    <div id="history"></div>
     <button type="button" id="generate" class="clearfix">Generate</button>
+    <h2> Check out our website at:<br><a href="http://cockpit-paul-3000.codio.io/header.html">Hotlots.com</a></h2>
+    <script src="Javascript.js"></script>
 
-  </body>
+</div>
+</body>
+<footer>
+    <h2>Players must be 18 or over and physically located in the UK or Isle of Man.</h2>
+</footer>
 
 </html>
